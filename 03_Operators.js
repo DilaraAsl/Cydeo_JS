@@ -25,3 +25,27 @@ if(num1>num2){
 else{
     console.log('number 2 is bigger');
 }
+
+//  ternary operator
+let age=25;
+let isEligible=age>18? true:false;
+console.log(isEligible);
+
+// switch operator
+let month=2;
+let daycount;
+switch (month) {
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        daycount=31;
+        
+        break;
+        case 4: case 6: case 9: case 11:
+        daycount=30;
+        break;
+        case 2:
+            daycount
+    default:
+        daycount=-1;
+        break;
+}
+console.log(daycount);
