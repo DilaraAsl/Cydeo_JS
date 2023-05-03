@@ -34,3 +34,13 @@ console.log(divide(15,3));
 
 let anyFunction=divide;
 console.log(anyFunction(20,4));
+
+// pass a function as an argument to other functions
+function sum(a,b) {
+    return a+b;
+}
+// advantage we can pass any function that we need -function is not limited, it is reusable - instead of sum we can use multiply, divide etc..
+function average(a,b,fn){
+    return fn(a,b)/2;
+}
+console.log(average(5,9,sum));
