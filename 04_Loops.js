@@ -4,7 +4,7 @@ for(let i=0; i<5; i++){ // let local scope
 }
 
 // console.log(i); will get Reference error because of variable scope
-// old type of declaring variables ES6
+// old type of declaring variables ES6 :side topic
 for(var j=0; j<5; j++){ //global function scope
     console.log(j);
 }
