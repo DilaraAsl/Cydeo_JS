@@ -25,8 +25,11 @@ function functionThatNeedsBackEndData(info) {
     
 }
 let data=waitingForSomeServerToAct(); //calls server connection, getting the data and storing it to a variable 
-functionThatNeedsBackEndData(data); // even though the function calls the waitingForSomeServerToAct() function it does not wait its response 
+functionThatNeedsBackEndData(data); // this function does not wait for the result of the previous action
+// even though the function calls the waitingForSomeServerToAct() function it does not wait its response 
 //and executes the code out put is undefined 5sec later the data recieved printed on the screen 
 // I need to use BackEnd dataundefined
 // backend information has just been recieved
 // Cydeo
+
+// instead of storing the data if we pass the function as an argument this will be fixed
