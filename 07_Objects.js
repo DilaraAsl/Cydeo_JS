@@ -20,3 +20,17 @@ console.log(address.street);
 // add new property to object
 person.age=30; // adds a new property to the person object
 console.log(person);
+//delete property 
+delete person.age;
+console.log(person);
+
+//check property in address object - returns true or false
+console.log('street' in address);
+console.log('age' in person);
+
+// you can place arrays inside objects
+let course={
+    name: 'JS',
+    url: 'Cydeo.com',
+    subjects: ['Objects','Arrays','Functions']
+}
