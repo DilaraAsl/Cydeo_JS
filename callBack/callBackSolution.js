@@ -23,3 +23,7 @@ waitingForSomeServerToAct(functionThatNeedsBackEndData);// it is kind of injecti
  * what is a callback hell?
  * what is async code and what is sync code? 
  */
+
+// js get user input with prompt
+let username=prompt("Enter your name");
+console.log(username); // prints in the console
