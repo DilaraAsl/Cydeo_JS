@@ -23,3 +23,14 @@ function howManyElements(...theArgs) { // pass values as an array just like java
 howManyElements();
 howManyElements(5);
 howManyElements(1,2,3,4,5);
+// don't know how many numbers that you will multiply by
+function multiply(multiplyBy,...theArgs){
+    return theArgs.map(element=>multiplyBy*element);
+}
+// multiply all the numbers by 5 [ 5, 10, 15, 20, 25 ]
+console.log(multiply(5,1,2,3,4,5));
+
+let str= 'CYDEO';
+// turns str into a char array [ 'C', 'Y', 'D', 'E', 'O' ]
+let chars= [...str];
+console.log(chars);
